@@ -1,0 +1,14 @@
+C:\Users\tssah\dotnet\forecasting\bin\Debug\net9.0\forecasting.exe
+C:\Users\tssah\dotnet\forecasting\bin\Debug\net9.0\forecasting.deps.json
+C:\Users\tssah\dotnet\forecasting\bin\Debug\net9.0\forecasting.runtimeconfig.json
+C:\Users\tssah\dotnet\forecasting\bin\Debug\net9.0\forecasting.dll
+C:\Users\tssah\dotnet\forecasting\bin\Debug\net9.0\forecasting.pdb
+C:\Users\tssah\dotnet\forecasting\obj\Debug\net9.0\forecasting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tssah\dotnet\forecasting\obj\Debug\net9.0\forecasting.AssemblyInfoInputs.cache
+C:\Users\tssah\dotnet\forecasting\obj\Debug\net9.0\forecasting.AssemblyInfo.cs
+C:\Users\tssah\dotnet\forecasting\obj\Debug\net9.0\forecasting.csproj.CoreCompileInputs.cache
+C:\Users\tssah\dotnet\forecasting\obj\Debug\net9.0\forecasting.dll
+C:\Users\tssah\dotnet\forecasting\obj\Debug\net9.0\refint\forecasting.dll
+C:\Users\tssah\dotnet\forecasting\obj\Debug\net9.0\forecasting.pdb
+C:\Users\tssah\dotnet\forecasting\obj\Debug\net9.0\forecasting.genruntimeconfig.cache
+C:\Users\tssah\dotnet\forecasting\obj\Debug\net9.0\ref\forecasting.dll
