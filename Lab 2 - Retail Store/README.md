@@ -1,16 +1,16 @@
 
-# 🧾 Lab 2: Setting Up the Database Context for a Retail Store
+# Lab 2: Setting Up the Database Context for a Retail Store
 
 ---
 
-### ✅ **Scenario**
+###  **Scenario**
 
 The retail store needs a system to store and manage **product** and **category** data using a **SQL Server** database.
 To achieve this, a **database context** (`DbContext`) is created using **Entity Framework Core (EF Core)** to manage database connections and object-relational mapping (ORM).
 
 ---
 
-### 🎯 **Objective**
+###  **Objective**
 
 * Understand how to define entity models and set up relationships.
 * Configure `DbContext` to map C# classes to SQL Server tables.
@@ -18,11 +18,11 @@ To achieve this, a **database context** (`DbContext`) is created using **Entity 
 
 ---
 
-## 🛠️ **Procedure**
+##  **Procedure**
 
 ---
 
-### 🔹 Step 1: Create Models
+### Step 1: Create Models
 
 * Identified two core entities: **Product** and **Category**.
 * Designed each with relevant properties like ID, name, and price.
@@ -33,7 +33,7 @@ To achieve this, a **database context** (`DbContext`) is created using **Entity 
 
 ---
 
-### 🔹 Step 2: Create the AppDbContext Class
+###  Step 2: Create the AppDbContext Class
 
 * Defined a class that inherits from EF Core’s `DbContext`.
 * Registered both entities (Product and Category) to be tracked and mapped as tables in the database.
@@ -41,7 +41,7 @@ To achieve this, a **database context** (`DbContext`) is created using **Entity 
 
 ---
 
-### 🔹 Step 3: Add Connection String
+### Step 3: Add Connection String
 
 * Provided a connection string to connect the application to SQL Server.
 * This was done directly in the context configuration for console applications.
@@ -49,7 +49,7 @@ To achieve this, a **database context** (`DbContext`) is created using **Entity 
 
 ---
 
-## ✅ **Outcome**
+## **Outcome**
 
 
 
