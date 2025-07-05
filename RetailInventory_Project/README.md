@@ -1,17 +1,17 @@
 
 
-# 🧾 Implementing a Retail Inventory System Using EF Core
+#  Implementing a Retail Inventory System Using EF Core
 
 ---
 
-### ✅ Scenario:
+###  Scenario:
 
 You are developing a **retail inventory management system** that keeps track of **products**, **categories**, and **stock levels** in a **SQL Server database**.
 To ensure **maintainability, scalability**, and reduce manual SQL operations, you adopt **Entity Framework Core (EF Core)** — a powerful Object-Relational Mapper (ORM) in .NET.
 
 ---
 
-### 🧠 Objective:
+###  Objective:
 
 * Understand the concept of ORM (Object-Relational Mapping).
 * Use EF Core 8.0 to map C# classes to relational tables.
@@ -20,11 +20,11 @@ To ensure **maintainability, scalability**, and reduce manual SQL operations, yo
 
 ---
 
-## 🛠️ Steps Followed:
+##  Steps Followed:
 
 ---
 
-### 🔹 Step 1: Project Setup
+### Step 1: Project Setup
 
 * Created a new .NET Console Application named `RetailInventory`.
 * Organized the project into folders:
@@ -35,7 +35,7 @@ To ensure **maintainability, scalability**, and reduce manual SQL operations, yo
 
 ---
 
-### 🔹 Step 2: Defining Data Models
+### Step 2: Defining Data Models
 
 * Identified the main entities: **Product** and **Category**.
 * Established relationships:
@@ -46,7 +46,7 @@ To ensure **maintainability, scalability**, and reduce manual SQL operations, yo
 
 ---
 
-### 🔹 Step 3: Creating the DbContext
+### Step 3: Creating the DbContext
 
 * Created a class to serve as the **bridge between C# classes and the database**.
 * Registered each entity as a table using EF Core's context setup.
@@ -54,14 +54,14 @@ To ensure **maintainability, scalability**, and reduce manual SQL operations, yo
 
 ---
 
-### 🔹 Step 4: Installing EF Core Dependencies
+### Step 4: Installing EF Core Dependencies
 
 * Installed necessary EF Core NuGet packages to support SQL Server and migration features.
 * Ensured tools were in place to use **EF CLI** for database operations like migrations and updates.
 
 ---
 
-### 🔹 Step 5: Applying Migrations
+### Step 5: Applying Migrations
 
 * Used EF Core CLI to generate the initial migration.
 * Applied the migration to create a database schema in SQL Server based on the defined models.
@@ -69,7 +69,7 @@ To ensure **maintainability, scalability**, and reduce manual SQL operations, yo
 
 ---
 
-### 🔹 Step 6: Testing Data Access
+### Step 6: Testing Data Access
 
 * Initialized the database with sample data (categories and products).
 * Retrieved data using asynchronous methods like `ToListAsync`, `FindAsync`, and `FirstOrDefaultAsync`.
@@ -77,7 +77,7 @@ To ensure **maintainability, scalability**, and reduce manual SQL operations, yo
 
 ---
 
-## 🧾 Outcome:
+##  Outcome:
 
 ![retailinventory](https://github.com/user-attachments/assets/5dea260a-ddd2-4030-808f-a9de4efa7edc)
 
