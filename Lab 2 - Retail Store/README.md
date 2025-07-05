@@ -1,4 +1,4 @@
-![retail store](https://github.com/user-attachments/assets/f600c543-286a-4f62-9eb4-738d2581046e)
+
 # 🧾 Lab 2: Setting Up the Database Context for a Retail Store
 
 ---
