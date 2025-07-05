@@ -1,16 +1,16 @@
 
-# 🧾 Lab 5: Retrieving Data from the Database
+#  Lab 5: Retrieving Data from the Database
 
 ---
 
-### ✅ **Scenario**
+###  **Scenario**
 
 The **retail store dashboard** needs to display a list of products along with their details such as name and price.
 To support this, the application must retrieve data from the SQL Server database using **Entity Framework Core (EF Core)**.
 
 ---
 
-### 🎯 **Objective**
+###  **Objective**
 
 * Use EF Core’s **asynchronous query methods** to fetch data from the database.
 * Retrieve:
@@ -22,11 +22,11 @@ To support this, the application must retrieve data from the SQL Server database
 
 ---
 
-## 🛠️ **Procedure**
+##  **Procedure**
 
 ---
 
-### 🔹 Step 1: Retrieve All Products
+### Step 1: Retrieve All Products
 
 * Established a connection to the database using the configured context.
 * Retrieved the full list of product records from the database table.
@@ -34,7 +34,7 @@ To support this, the application must retrieve data from the SQL Server database
 
 ---
 
-### 🔹 Step 2: Retrieve Product by ID
+###  Step 2: Retrieve Product by ID
 
 * Queried the database to find a single product using its **primary key (ID)**.
 * This method is efficient and optimized for primary key lookups.
@@ -42,7 +42,7 @@ To support this, the application must retrieve data from the SQL Server database
 
 ---
 
-### 🔹 Step 3: Retrieve Product Based on Condition
+###  Step 3: Retrieve Product Based on Condition
 
 * Queried the database to find the **first product** that matches a specific condition.
 * In this case, the condition was checking for a product with a **price greater than ₹50,000**.
@@ -50,7 +50,7 @@ To support this, the application must retrieve data from the SQL Server database
 
 ---
 
-## ✅ **Outcome**
+## **Outcome**
 
 ![retrieve](https://github.com/user-attachments/assets/82bbad68-44c1-4570-b88f-d8bbc7535be1)
 
