@@ -58,4 +58,3 @@ To learn how to use **EF Core CLI** to:
 
 ---
 
-Let me know if you want this in a GitHub README format or PDF format next!
