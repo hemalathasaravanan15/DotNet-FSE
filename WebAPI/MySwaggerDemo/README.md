@@ -94,6 +94,10 @@ The implementation must be carried out using .NET Core Web API and tested locall
 
 
 
+
+<img width="1364" height="644" alt="Screenshot 2025-07-13 205138" src="https://github.com/user-attachments/assets/763c60ea-90ed-4ba9-86f5-76660f958ebe" />
+
+
 * A functional .NET Core Web API was developed with Swagger integration.
 * API endpoints were documented and tested using Swagger UI and Postman.
 * Custom route names made URLs cleaner and more intuitive.
