@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lIqeAN0xrpA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tssah\\FirstWebApi\\FirstWebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tssah\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
+    "C:\\Users\\tssah\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
