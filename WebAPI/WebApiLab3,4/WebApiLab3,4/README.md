@@ -80,7 +80,19 @@ This task was completed as part of academic learning to understand:
 ![IMG-20250716-WA0006](https://github.com/user-attachments/assets/695f236e-8df3-408d-b703-59b1b1b07b21)
 
 
+![IMG-20250716-WA0007](https://github.com/user-attachments/assets/f2c04b02-ad3b-4d05-a3ab-4fdab9b12e02)
 
+
+![IMG-20250716-WA0008](https://github.com/user-attachments/assets/7bea1c88-8926-4f2f-a23d-41673af1219d)
+
+
+![IMG-20250716-WA0009](https://github.com/user-attachments/assets/f6bdeca5-4140-48f6-82bd-fe399a564d36)
+
+
+![IMG-20250716-WA0010](https://github.com/user-attachments/assets/5e83a6ed-7283-449f-9b19-d24b7107337e)
+
+
+![IMG-20250716-WA0011](https://github.com/user-attachments/assets/00f82dd4-9452-4353-8f2e-8a9faaef594e)
 
 
 By completing this project, the following objectives were successfully achieved:
