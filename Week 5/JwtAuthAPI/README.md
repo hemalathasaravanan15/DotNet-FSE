@@ -55,7 +55,10 @@ In a microservice architecture, securing APIs is crucial for preventing unauthor
 <img width="1365" height="713" alt="Screenshot 2025-07-20 232236" src="https://github.com/user-attachments/assets/1063a32c-6499-4a33-962d-4c60b273ad45" />
 
 
-<img width="1365" height="718" alt="Screenshot 2025-07-20 232347" src="https://github.com/user-attachments/assets/cc0491da-9b09-4db7-9d8b-127075a67f08" />
+<img width="1365" height="718" alt="Screenshot 2025-07-20 232347" src="https://github.com/user-attachments/assets/cc0491da-9b09-4db7-9d8b-127075a67f08" />  
+
+
+<img width="1365" height="720" alt="Screenshot 2025-07-20 233547" src="https://github.com/user-attachments/assets/837babd7-7284-4e7c-a969-1245d39194dc" />
 
 
 
