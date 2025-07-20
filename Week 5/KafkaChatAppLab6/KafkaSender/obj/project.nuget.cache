@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y5eTjT33iBE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tssah\\Downloads\\KafkaChatAppLab6\\KafkaSender\\KafkaSender.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tssah\\.nuget\\packages\\confluent.kafka\\2.11.0\\confluent.kafka.2.11.0.nupkg.sha512",
+    "C:\\Users\\tssah\\.nuget\\packages\\librdkafka.redist\\2.11.0\\librdkafka.redist.2.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}

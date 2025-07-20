@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "uuPs9oFD5E8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tssah\\Downloads\\KafkaChatAppLab6\\KafkaReceiver\\KafkaReceiver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tssah\\.nuget\\packages\\confluent.kafka\\2.3.0\\confluent.kafka.2.3.0.nupkg.sha512",
+    "C:\\Users\\tssah\\.nuget\\packages\\librdkafka.redist\\2.3.0\\librdkafka.redist.2.3.0.nupkg.sha512",
+    "C:\\Users\\tssah\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
