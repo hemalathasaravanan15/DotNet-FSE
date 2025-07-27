@@ -1,70 +1,104 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### **React Lab: blogapp – Understanding Component Lifecycle Methods**
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### **Scenario**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In this lab, the goal is to understand and implement **React class component lifecycle methods** using a practical example named `blogapp`. A component named `Posts` will fetch a list of blog posts from an external API, handle the rendering of that data, and also handle any potential errors gracefully. This lab demonstrates the importance of lifecycle hooks such as `componentDidMount()` and `componentDidCatch()` in real-time data-driven applications.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### **Objectives**
 
-### `npm run build`
+* Understand the need and benefits of the React component lifecycle.
+* Identify key lifecycle hook methods such as `componentDidMount()` and `componentDidCatch()`.
+* Learn the sequence of lifecycle events that occur during the mounting, updating, and unmounting phases of a component.
+* Practice rendering content conditionally based on data loaded during a lifecycle phase.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### **Procedure**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Create the React Project**
 
-### `npm run eject`
+   * A new React application named `blogapp` was created using the command:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+     ```bash
+     npx create-react-app blogapp
+     ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Open Project in Visual Studio Code**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   * The project folder was opened in VS Code for component development.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Create the Post Class (Data Model)**
 
-## Learn More
+   * A new file `Post.js` was created in the `src` directory.
+   * The file defines a basic JavaScript class for holding post properties such as `userId`, `id`, `title`, and `body`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Create the `Posts` Component**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   * A class-based React component was created in `Posts.js`.
+   * The constructor was defined to initialize the component’s state with an empty `posts` array.
 
-### Code Splitting
+5. **Define `loadPosts()` Method**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   * This method uses the Fetch API to retrieve data from the endpoint:
 
-### Analyzing the Bundle Size
+     ```
+     https://jsonplaceholder.typicode.com/posts
+     ```
+   * The retrieved data is parsed and stored in the component’s state.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+6. **Use `componentDidMount()` Lifecycle Hook**
 
-### Making a Progressive Web App
+   * The `componentDidMount()` method was implemented to call `loadPosts()` immediately after the component is mounted.
+   * This ensures that the post data is fetched and displayed after the initial render.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+7. **Render Post Data**
 
-### Advanced Configuration
+   * The `render()` method was implemented to loop through the `posts` in the state and display each post’s title and body using appropriate HTML elements like `<h2>` and `<p>`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+8. **Implement `componentDidCatch()`**
 
-### Deployment
+   * A custom `componentDidCatch()` method was added to handle unexpected rendering or network errors.
+   * In case of any error, an alert message is displayed to the user.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+9. **Render Posts Component in App**
 
-### `npm run build` fails to minify
+   * The `Posts` component was imported into `App.js` and included in the component tree so it loads when the application runs.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+10. **Run the Application**
+
+    * The project was started using:
+
+      ```bash
+      npm start
+      ```
+    * The application loaded in the browser at `http://localhost:3000`, displaying the fetched posts dynamically.
+
+---
+
+#### **Outcome**
+
+
+
+<img width="1365" height="719" alt="Screenshot 2025-07-24 111854" src="https://github.com/user-attachments/assets/821bf188-6c4a-483c-b48f-f918e5d1120a" />
+
+
+
+
+
+<img width="1364" height="709" alt="Screenshot 2025-07-24 111905" src="https://github.com/user-attachments/assets/2ee0ca33-e06d-4bb0-91b0-6dfb35eb92ca" />
+
+
+* Successfully created a functional blog application using React class components.
+* Understood and implemented key lifecycle methods like `componentDidMount()` and `componentDidCatch()`.
+* Learned how to fetch and display external data inside a component and manage it via state.
+* Handled potential runtime errors using lifecycle hooks for more robust application behavior.
+
+---
