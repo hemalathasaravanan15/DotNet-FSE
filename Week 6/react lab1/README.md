@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+###  **React Lab 1: Creating and Running a Basic React Application**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+####  **Scenario**
 
-In the project directory, you can run:
+As part of the React lab session, the objective was to understand the concept of **Single Page Applications (SPA)** and get hands-on experience by building a basic React application using `create-react-app`. The application should display a simple heading:
+**“Welcome to the first session of React”**
+This helps learners become familiar with setting up the React environment, editing components, and running the app locally.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+####  **Procedure**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **React Setup**
 
-### `npm test`
+   * Installed Node.js and NPM from the official website: [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+   * Installed React globally using `create-react-app` tool:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+     ```bash
+     npm install -g create-react-app
+     ```
 
-### `npm run build`
+2. **Creating a New React Project**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   * Created a new React application named `myfirstreact`:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+     ```bash
+     npx create-react-app myfirstreact
+     ```
+   * Navigated to the project folder:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+     ```bash
+     cd myfirstreact
+     ```
 
-### `npm run eject`
+3. **Editing the Application**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   * Opened the project in **Visual Studio Code**.
+   * Navigated to `src/App.js` and replaced the existing content with:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+     ```jsx
+     import React from 'react';
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+     function App() {
+       return (
+         <div>
+           <h1>Welcome to the first session of React</h1>
+         </div>
+       );
+     }
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+     export default App;
+     ```
 
-## Learn More
+4. **Running the Application**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   * Used the following command to start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+     ```bash
+     npm start
+     ```
+   * The application launched automatically in the browser at `http://localhost:3000`, displaying the heading as required.
 
-### Code Splitting
+5. **Uploading to GitHub**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   * Initialized a Git repository:
 
-### Analyzing the Bundle Size
+     ```bash
+     git init
+     git add .
+     git commit -m "Initial commit - My first React app"
+     ```
+   * Created a new repository on GitHub named `myfirstreact` and linked it:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+     ```bash
+     git remote add origin https://github.com/your-username/myfirstreact.git
+     git branch -M main
+     git push -u origin main
+     ```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+####  **Outcome**
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img width="1365" height="713" alt="Screenshot 2025-07-24 102518" src="https://github.com/user-attachments/assets/8e0dd683-2994-4361-9e5d-a7d5d5df4ae4" />
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+* Successfully created and ran a simple React application.
+* Displayed the heading message as intended.
+* Gained experience with `create-react-app`, JSX editing, component usage, and GitHub deployment.
+
+---
