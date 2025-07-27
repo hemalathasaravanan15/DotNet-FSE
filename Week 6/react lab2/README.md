@@ -1,70 +1,79 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### **React Lab: Student Management Portal – Components Practice**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+#### **Scenario**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This lab aims to provide hands-on experience with **React components** by building a simple **Student Management Portal**. The goal is to understand how to create and render multiple components using both **class-based** and **functional** approaches in a structured React project.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The portal includes three components:
 
-### `npm test`
+* `Home`: Displays “Welcome to the Home page of Student Management Portal”
+* `About`: Displays “Welcome to the About page of the Student Management Portal”
+* `Contact`: Displays “Welcome to the Contact page of the Student Management Portal”
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+#### **Procedure**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Create the React Project**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   * A new React project was initialized with the name `StudentApp` using the following command in the terminal:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+     ```bash
+     npx create-react-app StudentApp
+     ```
 
-### `npm run eject`
+2. **Set Up Component Folder Structure**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   * A new folder named `Components` was created inside the `src` directory to keep component files organized.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Create `Home` Component**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   * A file named `Home.js` was added inside the `Components` folder.
+   * The file contains a class component displaying a welcome message for the Home page.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Create `About` and `Contact` Components**
 
-## Learn More
+   * Two more files, `About.js` and `Contact.js`, were created inside the same `Components` folder.
+   * Each component (either class-based or functional) displays a relevant welcome message for the respective page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Edit `App.js` to Render All Components**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   * All three components were imported into `App.js`.
+   * They were rendered in sequence inside the main `App` component to be displayed together on the homepage.
 
-### Code Splitting
+6. **Run the Application**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   * The following command was used to start the development server:
 
-### Analyzing the Bundle Size
+     ```bash
+     npm start
+     ```
+   * The app automatically launched in the default browser at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+#### **Outcome**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img width="1365" height="718" alt="Screenshot 2025-07-24 104404" src="https://github.com/user-attachments/assets/d6112a26-2cd4-4a5c-8eca-ca87ebbd9ec1" />
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<img width="1358" height="715" alt="Screenshot 2025-07-24 104415" src="https://github.com/user-attachments/assets/c23d96af-25ae-40ca-814b-c304c7d9730f" />
+
+
+
+* Successfully created a structured React app named `StudentApp`.
+* Created and rendered multiple components (`Home`, `About`, and `Contact`).
+* Learned the differences between class components and function components.
+* Verified output locally in the browser with appropriate component messages.
+
+---
+
