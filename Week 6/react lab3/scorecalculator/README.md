@@ -1,70 +1,87 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### **React Lab: Score Calculator App – Functional Component and Styling**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+#### **Scenario**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In this lab session, the objective is to explore **React functional components** and apply basic **styling using external CSS**. A new application named **`scorecalculatorapp`** is created to build a component that calculates and displays the average score of a student based on the total marks and goal provided. This practical task demonstrates the use of **props**, **JSX expressions**, and **component-level styling** in React.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+#### **Procedure**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Create the React Project**
 
-### `npm run build`
+   * A new React project named `scorecalculatorapp` was created using the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+     ```bash
+     npx create-react-app scorecalculatorapp
+     ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Create a Component Folder**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   * Inside the `src` directory, a new folder named `Components` was created.
+   * A file named `CalculateScore.js` was added to this folder.
+   * The file contains a **functional component** that:
 
-### `npm run eject`
+     * Accepts `Name`, `School`, `Total`, and `Goal` as props
+     * Calculates the average score using basic logic
+     * Displays all student details including the calculated average
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Create and Apply External Styles**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   * A new folder named `Stylesheets` was created under `src`.
+   * A CSS file named `mystyle.css` was created and used to style the `CalculateScore` component.
+   * The component was updated to import this CSS file and apply relevant class-based styles.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Edit `App.js` to Render the Functional Component**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   * The `CalculateScore` component was imported into `App.js`.
+   * Sample data (Name, School, Total, Goal) was passed as props.
+   * The component was rendered inside the main App component to display output.
 
-## Learn More
+5. **Run the Application**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   * In the terminal, navigated to the project folder:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+     ```bash
+     cd scorecalculatorapp
+     ```
+   * Started the development server using:
 
-### Code Splitting
+     ```bash
+     npm start
+     ```
+   * The application opened in the browser at `http://localhost:3000` displaying the calculated average and student details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+#### **Outcome**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img width="1365" height="716" alt="Screenshot 2025-07-24 110238" src="https://github.com/user-attachments/assets/a655d62a-c24f-4f5f-af3b-5172091a0878" />
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+<img width="1358" height="713" alt="Screenshot 2025-07-24 110252" src="https://github.com/user-attachments/assets/78d5a849-88cf-41b7-9eef-f48adf20138d" />
+
+
+
+
+
+* A functional component `CalculateScore` was created and rendered successfully.
+* External CSS was applied to enhance component styling.
+* The component correctly displayed the student’s name, school, total score, goal, and calculated average.
+* The project met all learning goals related to functional components, props usage, styling, and JSX rendering in React.
+
+---
+
