@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### **React Lab: ticketbookingapp – Conditional Rendering in React**
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+#### **Scenario**
 
-### `npm start`
+This lab demonstrates how to implement **conditional rendering** in React using **element variables**, **simple conditions**, and **logical control**. The app simulates a basic **ticket booking portal** where **guest users** can only view flights, while **logged-in users** can book tickets.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### **Procedure**
 
-### `npm test`
+1. **Create the React Project**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   The React application was created using the following command:
 
-### `npm run build`
+   ```bash
+   npx create-react-app ticketbookingapp
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Set Up Component Structure**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   Inside the `src` folder:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   * Created two components:
 
-### `npm run eject`
+     * `GuestPage.js` – displays flight details only.
+     * `UserPage.js` – allows booking tickets.
+   * Each component includes JSX to show a distinct layout and message for the user type.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Implement Conditional Rendering in `App.js`**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   * A state variable `isLoggedIn` was created using the `useState` hook to determine the login status.
+   * Based on the value of `isLoggedIn`, either:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+     * `<UserPage />` is rendered when the user is logged in.
+     * `<GuestPage />` is rendered when the user is not logged in.
+   * The conditional logic was handled using **if-else**, **ternary operator**, or **element variables**.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Add Login and Logout Buttons**
 
-## Learn More
+   * Two buttons were created:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+     * **Login** – Sets `isLoggedIn` to `true`
+     * **Logout** – Sets `isLoggedIn` to `false`
+   * These buttons toggle the view dynamically based on the current login state.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Run the Application**
 
-### Code Splitting
+   Navigated to the project folder and started the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   cd ticketbookingapp
+   npm start
+   ```
 
-### Analyzing the Bundle Size
+   The app opened in the browser at `http://localhost:3000`, showing different views for guest and user modes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+#### **Outcome**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img width="1365" height="716" alt="Screenshot 2025-08-03 100833" src="https://github.com/user-attachments/assets/1b4097f7-519d-4a65-9911-2ff9a51a4423" />
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<img width="1357" height="707" alt="Screenshot 2025-08-03 100845" src="https://github.com/user-attachments/assets/feb46ead-76ad-46ea-b0b9-7da9f26c4f03" />
+
+
+
+
+
+
+<img width="1353" height="703" alt="Screenshot 2025-08-03 100855" src="https://github.com/user-attachments/assets/93619366-fcc5-4e14-a714-253e0fff9535" />
+
+
+
+
+
+* Successfully implemented **conditional rendering** using:
+
+  * Element variables
+  * `if-else` logic
+  * JSX expressions
+* Handled user state changes via buttons.
+* Prevented components from rendering based on login state.
+* Simulated a real-world use case of login-based user interface control.
+
+-up too.
