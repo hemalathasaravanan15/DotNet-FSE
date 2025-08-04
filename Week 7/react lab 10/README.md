@@ -1,4 +1,3 @@
-
 ---
 
 ### **React Lab: officespacerentalapp – JSX and Inline Styling**
