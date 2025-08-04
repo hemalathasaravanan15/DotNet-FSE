@@ -1,70 +1,84 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+### **React Lab 9: cricketapp – ES6 Features & Conditional Rendering**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+#### **Scenario**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This lab focuses on **applying ES6 JavaScript features in a React environment**. The objective is to explore concepts such as **arrow functions**, **map()**, **destructuring**, and **array merging**, while practicing **conditional rendering in React**. The application named `cricketapp` uses two main components – `ListofPlayers` and `IndianPlayers` – to display and manipulate cricket player data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+#### **Procedure**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Create the React Project**
 
-### `npm run build`
+   A new React project named `cricketapp` was initialized using:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npx create-react-app cricketapp
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Create Component Files**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   Inside the `src` folder:
 
-### `npm run eject`
+   * A folder named `Components` was created.
+   * Two functional component files were created: `ListofPlayers.js` and `IndianPlayers.js`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Develop `ListofPlayers` Component**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   * An array of 11 players with `name` and `score` was declared.
+   * The **`map()`** method was used to render each player’s information.
+   * **Arrow functions** were used to filter and display only players with scores below 70.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Develop `IndianPlayers` Component**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   * Players were divided into **odd and even index players** using array destructuring.
+   * Two separate arrays, `T20players` and `RanjiTrophyPlayers`, were merged using the ES6 **spread operator** and displayed as a single list.
 
-## Learn More
+5. **Implement Conditional Rendering**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   * A flag variable (`flag = true` or `false`) was declared in `App.js`.
+   * Used a simple `if-else` to display either the `ListofPlayers` or the `IndianPlayers` component on the homepage based on the flag value.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. **Run the Application**
 
-### Code Splitting
+   Navigate to the project directory and start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   cd cricketapp
+   npm start
+   ```
 
-### Analyzing the Bundle Size
+   Open `http://localhost:3000` in the browser to view the results.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+#### **Outcome**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+<img width="1365" height="716" alt="Screenshot 2025-08-03 094602" src="https://github.com/user-attachments/assets/8ead9218-9bf4-495c-a099-725f0b673181" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1365" height="669" alt="Screenshot 2025-08-03 094617" src="https://github.com/user-attachments/assets/cd93cc2e-09ac-424b-99e6-51d8eeb2fb79" />
+
+
+
+
+<img width="1365" height="712" alt="Screenshot 2025-08-03 094714" src="https://github.com/user-attachments/assets/740af7fe-5686-4d72-b10a-bc81e917b3b0" />
+
+
+* **ListofPlayers** displayed player details using `map()` and conditionally filtered low-scoring players using **arrow functions**.
+* **IndianPlayers** demonstrated ES6 **destructuring** and **array merging** with conditional display of even/odd players.
+* The application showcased **conditional rendering** based on the `flag` variable.
+* All components followed **modern ES6+ syntax** within a React project structure.
+
+---
+
+
