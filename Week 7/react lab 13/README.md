@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### **React Lab: bloggerapp – Conditional Rendering & List Components**
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+#### **Scenario**
 
-### `npm start`
+In this lab, the objective is to practice **various techniques of conditional rendering** and **handling list-based components using keys and the map() function**. The application consists of three components: **BookDetails**, **BlogDetails**, and **CourseDetails**. The rendering of these components is based on a flag or user selection.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### **Procedure**
 
-### `npm test`
+1. **Create the React Project**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   Created a new React app using the command:
 
-### `npm run build`
+   ```bash
+   npx create-react-app bloggerapp
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Create Component Structure**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   Inside the `src` folder:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   * A new folder `components` was created.
+   * Three components were added:
 
-### `npm run eject`
+     * `BookDetails.js`
+     * `BlogDetails.js`
+     * `CourseDetails.js`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   Each component:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   * Declares a **list of items** (e.g., books, blogs, courses).
+   * Uses the **`map()` function** to loop through and render items.
+   * Applies **unique keys** for each rendered element.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Implement Conditional Rendering in `App.js`**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   In `App.js`:
 
-## Learn More
+   * A **flag variable** (e.g., `displayComponent`) was defined using `useState` to decide which component to show.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   * Implemented **multiple conditional rendering techniques**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+     * **If-Else**
+     * **Ternary operator**
+     * **Short-circuit (&&) operator**
+     * **Switch-case (optional for multiple views)**
 
-### Code Splitting
+   * Rendered only one component at a time based on the flag.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   * Buttons were provided to switch between Book, Blog, and Course components.
 
-### Analyzing the Bundle Size
+4. **Handle List Rendering with Keys**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   Inside each component:
 
-### Making a Progressive Web App
+   * A list of items (books, blogs, courses) was stored as an array of objects.
+   * `map()` was used to render each item.
+   * A **unique key** (like `id`) was assigned to each element for optimal rendering performance and debugging.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+5. **Run the Application**
 
-### Advanced Configuration
+   Navigated to the project folder and started the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   cd bloggerapp
+   npm start
+   ```
 
-### Deployment
+   The app opened in the browser at `http://localhost:3000`, and the user could switch between views using buttons, each displaying respective content using list rendering.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+#### **Outcome**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+<img width="1357" height="720" alt="Screenshot 2025-08-03 101826" src="https://github.com/user-attachments/assets/d2fa3fea-f722-4cf4-9c16-1c592d3f5f11" />
+
+
+
+
+
+
+<img width="1358" height="708" alt="Screenshot 2025-08-03 101839" src="https://github.com/user-attachments/assets/e311cc3b-9b4c-4c49-ade4-c9325effcb0e" />
+
+
+
+
+
+
+
+* Applied **multiple ways of conditional rendering** in a single project.
+* Created and rendered **multiple components** based on state.
+* Practiced use of **keys in list rendering** using `map()`.
+* Created a modular, responsive app that switches between blog, book, and course views.
+
+---
