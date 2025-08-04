@@ -79,7 +79,6 @@ This lab explores how to implement **event handling** in React using **event han
 
 
 
-<img width="1362" height="713" alt="Screenshot 2025-08-03 100312" src="https://github.com/user-attachments/assets/d9a7c3d5-ea6e-464b-8a71-1d236cd845d1" />
 
 
 
