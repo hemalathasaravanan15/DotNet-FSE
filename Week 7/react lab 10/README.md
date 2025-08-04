@@ -1,70 +1,97 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+### **React Lab: officespacerentalapp – JSX and Inline Styling**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+#### **Scenario**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This lab focuses on understanding and implementing **JSX (JavaScript XML)** in a React application. Students are expected to demonstrate the use of **JSX syntax**, **React DOM rendering**, **JavaScript expressions**, and **inline CSS styling**. The lab project titled `officespacerentalapp` displays details of office spaces in a dynamic way using JSX and React elements.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+#### **Procedure**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Create the React Project**
 
-### `npm run build`
+   A new React application named `officespacerentalapp` was initialized using:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npx create-react-app officespacerentalapp
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Set Up Project Structure**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   * Navigated to the `src` directory.
+   * Edited the `App.js` file to include JSX elements for rendering office space content.
+   * Removed the default boilerplate code to customize the UI from scratch.
 
-### `npm run eject`
+3. **Display Heading and Image using JSX**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   * Used JSX syntax to create an **HTML heading** element.
+   * Rendered an **image** using JSX `img` tag and added appropriate `src` and `alt` attributes.
+   * Demonstrated embedding of JSX elements inside React's return statement.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Create and Use Office Object**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   * Created a single JavaScript object `office` with properties: `name`, `rent`, and `address`.
+   * Rendered the object’s data using **JSX expressions** inside HTML-like tags.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. **Create a List of Office Spaces**
 
-## Learn More
+   * Defined an **array of office objects**.
+   * Used the **`.map()`** function to iterate over the array and render multiple office space cards dynamically.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+6. **Apply Conditional Inline CSS Styling**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   * Used **inline styling in JSX** to dynamically set the **text color** of the `rent` value:
 
-### Code Splitting
+     * **Red** if the rent is below `60000`
+     * **Green** if the rent is `60000` or above
+   * The styling was done using a JavaScript expression embedded inside JSX.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+7. **Run the Application**
 
-### Analyzing the Bundle Size
+   Started the React development server with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   cd officespacerentalapp
+   npm start
+   ```
 
-### Making a Progressive Web App
+   The application opened automatically in the browser at:
+   `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+#### **Outcome**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<img width="1365" height="718" alt="Screenshot 2025-08-03 095259" src="https://github.com/user-attachments/assets/db46432d-0107-4ca0-af19-6815f4d353b9" />
+
+
+
+
+
+<img width="1344" height="710" alt="Screenshot 2025-08-03 095311" src="https://github.com/user-attachments/assets/1ac8e0f0-dcc4-49d3-b29c-acd113bf6a33" />
+
+
+
+
+
+<img width="1261" height="601" alt="Screenshot 2025-08-03 095426" src="https://github.com/user-attachments/assets/8e131aaf-13ed-4773-90b4-f679dbfa126e" />
+
+
+
+* JSX syntax was successfully used to render elements and attributes.
+* JavaScript expressions were used within JSX for dynamic data binding.
+* Inline conditional styling was applied to visually distinguish office rents.
+* The application dynamically rendered **multiple office spaces** using `.map()`.
+* React DOM updated in real time, validating JSX-based component rendering.
+
+---
