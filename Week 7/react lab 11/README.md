@@ -1,70 +1,110 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+### **React Lab: eventexamplesapp – Event Handling and Synthetic Events**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+#### **Scenario**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This lab explores how to implement **event handling** in React using **event handlers**, the **`this` keyword**, and **synthetic events**. The app also demonstrates how to interact with buttons and form elements using React’s **event naming conventions**. A real-world example of a **currency converter** is also built as part of this lab.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+#### **Procedure**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Create the React Project**
 
-### `npm run build`
+   The React application was initialized using:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npx create-react-app eventexamplesapp
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Build Counter Functionality with Multiple Event Handlers**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   * Inside `App.js`, a **state variable `count`** was declared using `useState` hook to track the counter value.
+   * Two buttons were created:
 
-### `npm run eject`
+     * **"Increment"**: Calls two methods when clicked:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+       * Increments the count
+       * Logs a greeting message to the console (`Hello! This is a static message.`)
+     * **"Decrement"**: Decreases the count using a single handler function.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Implement a Button with Argument-based Event Handling**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   * A button labeled **"Say Welcome"** was added.
+   * It calls a function with an argument (e.g., `"Welcome to the event handling example!"`).
+   * This demonstrates passing custom arguments to event handler functions.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Demonstrate Synthetic Events**
 
-## Learn More
+   * Created a button labeled **"OnPress"**.
+   * On clicking, it triggers a **synthetic event** that logs or displays the message:
+     **"I was clicked"**
+   * This confirms the event was handled by React’s `SyntheticEvent` system (not the browser's native event).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Create a CurrencyConverter Component**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   * A new component named `CurrencyConverter` was created inside the `src/Components` folder.
+   * It includes:
 
-### Code Splitting
+     * A controlled input field to enter INR amount.
+     * A **Convert** button that triggers `handleSubmit` method.
+     * The logic converts the input into **Euros** using a fixed conversion rate (e.g., 1 Euro = 90 INR).
+   * JSX was used to display both input and result cleanly.
+   * The `handleSubmit` method was bound to the **onClick** event of the Convert button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+6. **Render Components in App**
 
-### Analyzing the Bundle Size
+   * The `CurrencyConverter` component was imported and rendered inside `App.js` along with the counter and buttons.
+   * Each button and action was clearly labeled and handled using proper event names like `onClick`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+7. **Run the App**
 
-### Making a Progressive Web App
+   ```bash
+   cd eventexamplesapp
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   Opened at: `http://localhost:3000`
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### **Outcome**
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img width="1363" height="714" alt="Screenshot 2025-08-03 100302" src="https://github.com/user-attachments/assets/f5055480-16ce-4c5b-85f4-64db3add3c84" />
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<img width="1362" height="713" alt="Screenshot 2025-08-03 100312" src="https://github.com/user-attachments/assets/d9a7c3d5-ea6e-464b-8a71-1d236cd845d1" />
+
+
+
+
+
+<img width="1357" height="711" alt="Screenshot 2025-08-03 100328" src="https://github.com/user-attachments/assets/19c2cb01-51b2-4011-abf4-9042aa3059d7" />
+
+
+
+
+
+
+<img width="1354" height="709" alt="Screenshot 2025-08-03 100341" src="https://github.com/user-attachments/assets/0206443e-0b9f-4a72-8bcc-f2e739b60123" />
+
+
+
+
+
+
+* Successfully handled events in React using `onClick` and functional methods.
+* Applied **multiple function calls** in a single event.
+* Used **synthetic events** to manage click actions in a React-friendly way.
+* Passed **custom arguments** to event handlers.
+* Built and displayed a **currency converter** using a custom component.
+* Practiced React’s naming conventions, JSX usage, and state management.
+
+---
+
